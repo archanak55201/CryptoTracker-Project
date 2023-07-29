@@ -35,9 +35,12 @@ async function fetchGridData(){
     const response = await fetch(url,{method: "GET"});
     const result = await response.json();
     // console.log(result.length);
+   clearGridData();
     addGridData(result);
 }
-
+function clearGridData(){
+    addingContainer.innerHTML="";
+}
 // fetchGridData();
 function addGridData(result){
     for(let i=0;i<result.length;i++){
@@ -94,7 +97,11 @@ async function fetchListData(){
     const response = await fetch(url,{method: "GET"});
     const result = await response.json();
     // console.log(result.length);
+   clearListData();
     addListData(result);
+}
+function clearListData(){
+    addingListContainer1.innerHTML="";
 }
 function addListData(result){
     for(let i=0;i<result.length;i++){
