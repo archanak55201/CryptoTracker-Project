@@ -59,6 +59,11 @@
             gap:20px;
         
         }
+ @media (max-width:1000px) {
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    } 
+ } 
 .box{
     /* border:1px solid red; */
     background-color: rgba(59, 56, 56, 0.536);
