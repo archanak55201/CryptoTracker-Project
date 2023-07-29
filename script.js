@@ -70,7 +70,7 @@ function addGridData(result){
                     </div>
                     <div class="box-lower">
                         <div>Total Volume: <span>${result[i].total_volume}</span></div>
-                        <div>Market Cap: <span>$${result[i].market_cap}</span></div>
+                        <div>Market Cap: <span>$ ${result[i].market_cap}</span></div>
                         
                 </div>
             `;
@@ -159,10 +159,10 @@ function addListData(result){
                     </div>
                 </td>
                 <td>
-                    <div><span>${result[i].total_volume}</span></div>
+                    <div class="box-lower"><span>${result[i].total_volume}</span></div>
                 </td>
                 <td>
-                    <div><span>$${result[i].market_cap}</span></div>
+                    <div class="box-lower"><span>$ ${result[i].market_cap}</span></div>
                 </td>
 
         `;
