@@ -168,6 +168,10 @@ td{
     text-align: center;
     padding: 5px;
 }
+.links>div:hover{
+    color:rgb(0, 234, 255);
+    cursor: pointer;
+}
 #dashboard{
     color: white;
     background-color: rgba(51, 128, 244, 0.852);
